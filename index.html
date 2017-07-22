@@ -15,17 +15,17 @@
     </head>
     <body>
         <div class="wrapper">
-            <h1 class="title">weather in your current location</h1>
-            <p class="temp">20<span>°</span>C</p>
-            <h2 class="location"><i class="fa fa-map-marker"></i>Kolbuszowa Dolna, PL</h2>
+            <h1 class="title">Use your geolocation or search for city!</h1>
+            <p class="temp"></p>
+            <h2 class="location"></h2>
             <div class="info">
                 <ul>
-                    <li><img src="images/wind.png" alt="Wind">0.5m/s</li>
-                    <li><img src="images/humidity.png" alt="Humidity">88%</li>
-                    <li><img src="images/pressure.png" alt="Pressure">1013hPa</li>
+                    <li id="wind"></li>
+                    <li id="hum"></li>
+                    <li id="pressure"></li>
                 </ul>
-                <form class="city-form" action="#" onsubmit="return funkcja()">
-                    <input type="text" placeholder="City name"><button type="submit"><i class="fa fa-search"></i></button>
+                <form class="city-form" action="#">
+                    <input class="city-name" value="" type="text" placeholder="City name"><button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
         </div>
