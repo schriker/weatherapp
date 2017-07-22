@@ -2,5 +2,108 @@ body{
     margin: 0 auto;
     background-color: #333e56;
     background-image: url(../images/bg.jpg);
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    color: #fff;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.wrapper{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 65%;
+    padding: 40px 60px;
+    transform: translate(-50%,0%);
+    background-color: #252f45;
+}
+
+.temp{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+.temp:hover{
+    cursor: pointer;
+}
+
+.temp span{
+    color: #dc1c3b;
+}
+
+.location i{
+    color: #dc1c3b;
+    margin:0 20px 0 0;
+}
+
+.info{
+    border-top: 2px #47536c solid;
+    color: #bfbfbf;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 40px 0;
+    padding: 20px 0 0 0;
+}
+
+.info ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 60px 0 0;
+}
+
+.info ul li img{
+    vertical-align: middle;
+    margin: 0 20px 0 0; 
+}
+
+.city-form{
+    padding: 0;
+    margin: 50px 0 0 0;
+}
+
+.city-form input[type="text"]{
+    font-size: 18px;
+    color:#bfbfbf;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    width: 40%;
+    text-transform: uppercase;
+    border: 5px solid #607a93;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px 25px;
+    outline: none;
+}
+
+.city-form input[type="text"]:focus{
+    border-color: #7e4750;
+}
+
+.city-form button[type="submit"]{
+    background: none;
+    border: none;
+    padding:8px 10px;
+    color: #dc1c3b;
+    font-size: 30px;
+    margin:-7px 0 0 -55px;
+    vertical-align: middle;
+    outline: none;
+
+}
+
+.city-form button[type="submit"]:hover{
+    cursor: pointer;
+    color: #7e4750;
 }
