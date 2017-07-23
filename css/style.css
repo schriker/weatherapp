@@ -20,6 +20,12 @@ h2{
     text-transform: uppercase;
 }
 
+h3{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase; 
+}
+
 .wrapper{
     position: absolute;
     top: 90px;
@@ -33,7 +39,12 @@ h2{
 .temp{
     font-size: 60px;
     font-weight: 700;
-    margin: 40px 0;
+    margin: 30px 0;
+}
+
+.temp img{
+    vertical-align: middle;
+    margin:0 0 0 30px;
 }
 
 .temp:hover{

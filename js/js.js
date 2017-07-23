@@ -2,13 +2,14 @@ var apiKey="f77f0fa54024249a37dbb79c1e5b8186";
 var mainUrl="http://api.openweathermap.org/data/2.5/weather?";
 
 function getWeather(apiUrl){
-    console.log(apiUrl);
+    /*console.log(apiUrl);*/
     $.ajax({
         url: apiUrl,
         success: function(result){
             $(".title").html("Current weather in:");
-            $(".temp").html(result.main.temp+"<span>°</span>C");
+            $(".temp").html(result.main.temp+"<span>°</span>C<img src=\"images/ico/"+result.weather[0].icon+".png\" alt=\"Icon\">");
             $(".location").html("<i class=\"fa fa-map-marker\"></i>"+result.name+", "+result.sys.country);
+            $(".desc").html(result.weather[0].description);
             $("#wind").html("<img src=\"images/wind.png\" alt=\"Wind\">"+result.wind.speed+"m/s");
             $("#hum").html("<img src=\"images/humidity.png\" alt=\"Humidity\">"+result.main.humidity+"%");
             $("#pressure").html("<img src=\"images/pressure.png\" alt=\"Pressure\">"+result.main.pressure+"hPa");
